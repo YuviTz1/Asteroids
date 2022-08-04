@@ -1,0 +1,8 @@
+#version 330 core
+layout(location = 0) in vec3 aPos;
+layout(location = 1) in vec3 aOffset;
+uniform mat4 scaleMat;
+void main()
+{
+	gl_Position = scaleMat * vec4(aPos, 1.0f) + vec4(aOffset, 1.0f);
+}

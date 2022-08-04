@@ -1,0 +1,2 @@
+g++ main.cpp -o asteroids playerSpaceship.cpp shader_class.cpp bullet.cpp gameManager.cpp asteroid.cpp emitter.cpp -lGL -lGLEW -lglfw 
+./asteroids
